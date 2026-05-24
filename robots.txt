@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aganba.github.io/sitemap.xml
