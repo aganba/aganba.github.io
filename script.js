@@ -20,3 +20,16 @@ const hash = location.hash.replace('#', '');
 if (hash && document.getElementById(hash)) {
   showSection(hash);
 }
+
+// Pub subnav: scroll with dynamic offset to account for wrapped rows on mobile
+document.querySelectorAll('.pub-subnav a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.getElementById(this.getAttribute('href').slice(1));
+    if (!target) return;
+    const navbarH = document.getElementById('navbar').offsetHeight;
+    const subnavH = document.querySelector('.pub-subnav').offsetHeight;
+    const top = target.getBoundingClientRect().top + window.scrollY - navbarH - subnavH - 16;
+    window.scrollTo({ top, behavior: 'smooth' });
+  });
+});
