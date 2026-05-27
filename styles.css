@@ -134,6 +134,15 @@ a:hover { text-decoration: underline; }
   border: 2px solid var(--border);
 }
 
+.avatar-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 15%;
+  border: 2px solid var(--border);
+}
+
 .contact-links {
   display: flex;
   flex-direction: column;
@@ -205,8 +214,38 @@ a:hover { text-decoration: underline; }
 }
 
 /* ── Publications ─────────────────────────────────────────────── */
+.pub-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  position: sticky;
+  top: var(--nav-h);
+  z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem 0 0;
+  margin-bottom: 1.75rem;
+}
+
+.pub-subnav a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 0.4rem 0;
+  margin-right: 1.5rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.pub-subnav a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
 .pub-section {
   margin-bottom: 2.5rem;
+  scroll-margin-top: calc(var(--nav-h) + 4rem);
 }
 
 .pub-section-title {

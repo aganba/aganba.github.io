@@ -77,7 +77,7 @@
     <section id="home" class="page active">
       <div class="home-layout">
         <div class="avatar-col">
-          <div class="avatar-placeholder">AG</div>
+          <img src="mail+.jpg" alt="Arvind Ganesh Balasubramanian" class="avatar-img">
           <div class="contact-links">
             <a href="https://github.com/aganba" target="_blank" rel="noopener">GitHub</a>
             <a href="https://www.linkedin.com/in/arvind-ganesh-balasubramanian/" target="_blank" rel="noopener">LinkedIn</a>
@@ -86,7 +86,7 @@
         </div>
         <div class="bio-col">
           <h1>Arvind Ganesh</h1>
-          <p class="title-line">Engineering Manager &middot; Machine Learning</p>
+          <p class="title-line">Engineering Leader &middot; Machine Learning</p>
           <p class="bio">
             Arvind Ganesh Balasubramanian is an Engineering Manager at Roblox, where he has led the Ranking and Personalization team for the Avatar Marketplace since January 2026.
           </p>
@@ -94,7 +94,7 @@
             Arvind is an experienced engineering leader with deep expertise in machine learning, computer vision, and applied AI. He spent a decade at Google across a range of high-impact roles. He built ML pipelines for parsing and moderating user-uploaded imagery on Google Maps, developed multimodal models to assess ad creative quality on Discover Feed, and led the development of LLM-based tools to assist developers with large-scale code migrations. Earlier at Google, he worked on personal video search for Google Photos, deploying multiple models that significantly improved recall and grew query volume, and proposed the Action Moments feature for capturing interesting moments from videos as GIFs. Before joining Google, he was a founding engineer at Baarzo, a video search startup that was acquired by Google in 2014. He also spent a brief stint as a Tech Lead Manager at Uber, building enterprise search and LLM-powered productivity tools.
           </p>
           <p class="bio">
-            Arvind holds a Ph.D. in Electrical and Computer Engineering from the University of Illinois, Urbana-Champaign, and a B.Tech &amp; M.Tech in Electrical Engineering from IIT Madras. He is a Senior Member of the IEEE and a named inventor on two US patents in the areas of video understanding and synthesis.
+            Arvind holds a Ph.D. in Electrical and Computer Engineering from the <a href="https://illinois.edu" target="_blank" rel="noopener noreferrer">University of Illinois, Urbana-Champaign</a>, and a B.Tech &amp; M.Tech in Electrical Engineering from <a href="https://www.iitm.ac.in" target="_blank" rel="noopener noreferrer">IIT Madras</a>. He is a Senior Member of the IEEE and a named inventor on two US patents in the areas of video understanding and synthesis.
           </p>
         </div>
       </div>
@@ -105,8 +105,16 @@
       <div class="page-inner">
         <h1>Publications</h1>
 
+        <nav class="pub-subnav">
+          <a href="#pub-patents">Patents</a>
+          <a href="#pub-book-chapters">Book Chapters</a>
+          <a href="#pub-thesis">Doctoral Thesis</a>
+          <a href="#pub-journals">Journal Articles</a>
+          <a href="#pub-conferences">Conference Papers</a>
+        </nav>
+
         <!-- PATENTS -->
-        <div class="pub-section">
+        <div class="pub-section" id="pub-patents">
           <h2 class="pub-section-title">Patents</h2>
 
           <div class="pub-year-group">
@@ -136,8 +144,41 @@
           </div>
         </div><!-- /pub-section patents -->
 
+        <!-- BOOK CHAPTERS -->
+        <div class="pub-section" id="pub-book-chapters">
+          <h2 class="pub-section-title">Book Chapters</h2>
+
+          <div class="pub-year-group">
+            <span class="year-label">2012</span>
+            <div class="pub-list">
+              <div class="pub-item">
+                <a class="pub-title" href="https://www.cambridge.org/core/books/abs/compressed-sensing/face-recognition-by-sparse-representation/812FE3DB63AC2358CCD93CCFD19D47E2" target="_blank" rel="noopener">Face Recognition by Sparse Representation</a>
+                <p class="pub-authors"><strong>A. Ganesh</strong>, A. Wagner, Z. Zhou, A. Yang, Y. Ma, J. Wright</p>
+                <p class="pub-venue"><em>Compressed Sensing: Theory and Applications</em>, Cambridge University Press, 2012</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- /pub-section book chapters -->
+
+        <!-- DOCTORAL THESIS -->
+        <div class="pub-section" id="pub-thesis">
+          <h2 class="pub-section-title">Doctoral Thesis</h2>
+
+          <div class="pub-year-group">
+            <span class="year-label">2012</span>
+            <div class="pub-list">
+              <div class="pub-item">
+                <a class="pub-title" href="https://www.ideals.illinois.edu/items/32194" target="_blank" rel="noopener">Applications of Low-Rank Matrix Recovery Methods in Computer Vision</a>
+                <p class="pub-authors">University of Illinois, Urbana-Champaign</p>
+                <p class="pub-venue">Thesis Advisor: <a href="https://people.eecs.berkeley.edu/~yima/" target="_blank" rel="noopener">Prof. Yi Ma</a></p>
+                <p class="pub-venue">Thesis Committee: <a href="https://en.wikipedia.org/wiki/Thomas_Huang" target="_blank" rel="noopener">(Late) Prof. Thomas Huang</a>, <a href="https://ece.illinois.edu/about/directory/faculty/milenkov" target="_blank" rel="noopener">Prof. Olgica Milenkovic</a>, <a href="https://www.ece.ufl.edu/people/faculty/sean-meyn/" target="_blank" rel="noopener">Prof. Sean Meyn</a></p>
+              </div>
+            </div>
+          </div>
+        </div><!-- /pub-section doctoral thesis -->
+
         <!-- JOURNAL ARTICLES -->
-        <div class="pub-section">
+        <div class="pub-section" id="pub-journals">
           <h2 class="pub-section-title">Journal Articles</h2>
 
           <div class="pub-year-group">
@@ -208,7 +249,7 @@
         </div><!-- /pub-section journals -->
 
         <!-- CONFERENCE PAPERS -->
-        <div class="pub-section">
+        <div class="pub-section" id="pub-conferences">
           <h2 class="pub-section-title">Conference Papers</h2>
 
           <div class="pub-year-group">
@@ -285,39 +326,6 @@
             </div>
           </div>
         </div><!-- /pub-section conferences -->
-
-        <!-- BOOK CHAPTERS -->
-        <div class="pub-section">
-          <h2 class="pub-section-title">Book Chapters</h2>
-
-          <div class="pub-year-group">
-            <span class="year-label">2012</span>
-            <div class="pub-list">
-              <div class="pub-item">
-                <a class="pub-title" href="https://www.cambridge.org/core/books/abs/compressed-sensing/face-recognition-by-sparse-representation/812FE3DB63AC2358CCD93CCFD19D47E2" target="_blank" rel="noopener">Face Recognition by Sparse Representation</a>
-                <p class="pub-authors"><strong>A. Ganesh</strong>, A. Wagner, Z. Zhou, A. Yang, Y. Ma, J. Wright</p>
-                <p class="pub-venue"><em>Compressed Sensing: Theory and Applications</em>, Cambridge University Press, 2012</p>
-              </div>
-            </div>
-          </div>
-        </div><!-- /pub-section book chapters -->
-
-        <!-- DOCTORAL THESIS -->
-        <div class="pub-section">
-          <h2 class="pub-section-title">Doctoral Thesis</h2>
-
-          <div class="pub-year-group">
-            <span class="year-label">2012</span>
-            <div class="pub-list">
-              <div class="pub-item">
-                <a class="pub-title" href="https://www.ideals.illinois.edu/items/32194" target="_blank" rel="noopener">Applications of Low-Rank Matrix Recovery Methods in Computer Vision</a>
-                <p class="pub-authors">University of Illinois, Urbana-Champaign</p>
-                <p class="pub-venue">Thesis Advisor: <a href="https://people.eecs.berkeley.edu/~yima/" target="_blank" rel="noopener">Prof. Yi Ma</a></p>
-                <p class="pub-venue">Thesis Committee: <a href="https://en.wikipedia.org/wiki/Thomas_Huang" target="_blank" rel="noopener">(Late) Prof. Thomas Huang</a>, <a href="https://ece.illinois.edu/about/directory/faculty/milenkov" target="_blank" rel="noopener">Prof. Olgica Milenkovic</a>, <a href="https://www.ece.ufl.edu/people/faculty/sean-meyn/" target="_blank" rel="noopener">Prof. Sean Meyn</a></p>
-              </div>
-            </div>
-          </div>
-        </div><!-- /pub-section doctoral thesis -->
 
 
       </div>
