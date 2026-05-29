@@ -535,6 +535,41 @@ a.pub-title:hover {
   margin-bottom: 0;
 }
 
+/* ── Home timeline (enlarged: sole content on homepage) ──────── */
+#home .timeline {
+  margin-top: 2rem;
+}
+#home .timeline-item {
+  padding-left: 2.2rem;
+  padding-bottom: 2.1rem;
+}
+#home .timeline-dot {
+  width: 15px;
+  height: 15px;
+  top: 0.5rem;
+}
+#home .timeline-item::before {
+  left: 6.5px;
+  top: 0.7rem;
+}
+#home .timeline-employer {
+  font-size: 1.4rem;
+}
+#home .timeline-dates {
+  font-size: 0.95rem;
+}
+#home .timeline-role {
+  font-size: 0.95rem;
+  margin-top: 0.15rem;
+}
+#home .timeline-desc {
+  font-size: 0.92rem;
+}
+#home .timeline-sublist li {
+  font-size: 0.92rem;
+  margin-bottom: 0.25rem;
+}
+
 /* ── Footer ─────────────────────────────────────────────────── */
 #footer {
   text-align: center;
