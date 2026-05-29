@@ -411,6 +411,130 @@ a.pub-title:hover {
   color: var(--text);
 }
 
+/* ── Experience timeline ─────────────────────────────────────── */
+.timeline {
+  margin-top: 2.2rem;
+}
+
+.timeline-heading {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1.2rem;
+}
+
+.timeline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 1.85rem;
+  padding-bottom: 1.5rem;
+}
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+/* connecting line from this dot to the next */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 0.55rem;
+  bottom: -0.1rem;
+  width: 2px;
+  background: var(--border);
+}
+.timeline-item:last-child::before {
+  display: none;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  border: 2px solid var(--bg);
+  z-index: 1;
+}
+
+.timeline-item.current .timeline-dot {
+  background: var(--granted);
+  animation: timeline-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes timeline-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(26, 107, 60, 0.5); }
+  70%  { box-shadow: 0 0 0 7px rgba(26, 107, 60, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(26, 107, 60, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline-item.current .timeline-dot { animation: none; }
+}
+
+.timeline-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.timeline-employer {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.timeline-dates {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.timeline-role {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  line-height: 1.35;
+  margin-top: 0.05rem;
+}
+
+.timeline-desc {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-top: 0.1rem;
+}
+
+.timeline-sublist {
+  list-style: disc;
+  margin: 0.25rem 0 0;
+  padding-left: 1.1rem;
+}
+.timeline-sublist li {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-bottom: 0.15rem;
+}
+.timeline-sublist li:last-child {
+  margin-bottom: 0;
+}
+
 /* ── Footer ─────────────────────────────────────────────────── */
 #footer {
   text-align: center;
