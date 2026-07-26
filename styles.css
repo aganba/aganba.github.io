@@ -18,6 +18,25 @@
   --font-sans: 'Inter', system-ui, sans-serif;
 }
 
+/* ── Dark mode (follows system setting) ──────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17161b;
+    --surface: #1f1e24;
+    --border: #35333d;
+    --text: #e8e6e1;
+    --text-muted: #a1a0a9;
+    --accent: #6fa8d6;
+    --accent-light: #223549;
+    --granted: #4fbb7f;
+    --granted-bg: #16311f;
+    --pending: #d6a94f;
+    --pending-bg: #33280f;
+  }
+  /* keep hover-fill text readable against the lighter accent */
+  .pub-links a:hover { color: #10161d; }
+}
+
 html { scroll-behavior: smooth; }
 
 body {
