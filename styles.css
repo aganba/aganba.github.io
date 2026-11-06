@@ -609,4 +609,7 @@ a.pub-title:hover {
   .bio-col h1 { font-size: 1.9rem; }
   .pub-year-group { flex-direction: column; gap: 1rem; }
   .nav-name { display: none; }
+  .nav-inner { padding: 0 1rem; justify-content: center; }
+  .nav-links { gap: 1.1rem; }
+  .nav-link { font-size: 0.8rem; letter-spacing: 0.02em; }
 }
