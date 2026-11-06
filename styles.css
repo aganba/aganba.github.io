@@ -323,6 +323,11 @@ a.pub-title {
   line-height: 1.4;
   text-decoration: none;
 }
+a.pub-title.misc-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent);
+}
 a.pub-title:hover {
   color: var(--accent);
   text-decoration: none;
